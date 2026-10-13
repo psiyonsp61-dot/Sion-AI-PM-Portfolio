@@ -29,13 +29,7 @@ The original course/workshop bundle is kept locally and excluded from Git by def
 
 ## Git setup and workflow
 
-Initialize this folder locally when ready:
-
-```powershell
-git init -b main
-```
-
-The local source bundle is ignored, so the initial repository contains only the portfolio setup documents and any files you explicitly add outside that bundle. Review what Git will track:
+This repository is initialized on `main` and connected to the `origin` remote. The local source bundle is ignored, so it is not included in the published repository. Review what Git will track:
 
 ```powershell
 git status --short
@@ -49,7 +43,11 @@ git diff --cached
 git commit -m "Prepare AI PM portfolio"
 ```
 
-To publish later, create an empty repository on your chosen Git host and add its URL as the `origin` remote. No remote or push is configured by this setup.
+The GitHub remote is `https://github.com/psiyonsp61-dot/Sion-AI-PM-Portfolio.git`. Push future commits with:
+
+```powershell
+git push
+```
 
 ## Privacy and publishing checklist
 
